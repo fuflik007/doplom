@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Запис | Royal Barber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo-area">
+                <h2 class="logo-text">ROYAL<span>BARBER</span></h2>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="booking.html" class="active btn-gold">ЗАПИСАТИСЯ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-section">
+        <div class="booking-container fade-in">
+            <h2>Бронювання візиту</h2>
+            <form id="bookingForm">
+                
+                <div class="form-group">
+                    <label>Оберіть майстра:</label>
+                    <div class="barber-selection">
+                        <label class="barber-card">
+                            <input type="radio" name="barber" value="Олександр" required>
+                            <div class="barber-info">
+                                <span class="name">Олександр</span>
+                                <span class="rank">Top Barber</span>
+                            </div>
+                        </label>
+                        <label class="barber-card">
+                            <input type="radio" name="barber" value="Дмитро">
+                            <div class="barber-info">
+                                <span class="name">Дмитро</span>
+                                <span class="rank">Senior Barber</span>
+                            </div>
+                        </label>
+                        <label class="barber-card">
+                            <input type="radio" name="barber" value="Артем">
+                            <div class="barber-info">
+                                <span class="name">Артем</span>
+                                <span class="rank">Barber</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Послуга:</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Оберіть послугу --</option>
+                        <option value="500">Чоловіча стрижка - 500 грн</option>
+                        <option value="400">Стрижка машинкою - 400 грн</option>
+                        <option value="400">Стрижка бороди - 400 грн</option>
+                        <option value="700">Стрижка + Борода - 700 грн</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Дата:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Час:</label>
+                        <select id="time" name="time" required>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Ваше Ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+380..." required>
+                </div>
+
+                <button type="submit" class="btn-submit">ПІДТВЕРДИТИ ЗАПИС</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
